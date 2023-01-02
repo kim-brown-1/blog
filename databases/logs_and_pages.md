@@ -40,4 +40,8 @@ One concern when using SSTables is that it can take a really long time to find a
 
 ## Test & solidify knowledge 
 
+## More resources
+
+[Google's paper on Bigtable](https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf), their influential home-grown database which uses SSTables. 
+
  
