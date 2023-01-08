@@ -13,13 +13,23 @@ Address space is broken up into bytes (usually 8 bits). So if you want to store 
 
 ## Common operators
 
+Note - the shorthand for logical operators (|, &, >>, <<) are based on C/ Python notation. 
+
 - NOT: AKA "bitwise complement", negates each bit. Ex]  ^ "0011 1111" -> "1100 0000"
 - AND: Performs **logical AND** on the corresponding bits in two inputs. Ex]  "1111 0000" & "1100 1111" -> "1100 0000"
 - OR: Performs **inclusive OR** on corresponding bits.  Ex]  "1111 1100" | "0000 1111" -> "1111 1111"
-- XOR: Performs **exclusive OR** on corresponding bits.  Ex] "1111 1100" | "0000 1111" -> "1111 0000"
+- XOR: Performs **exclusive OR** on corresponding bits.  Ex] "1111 1100" ^ "0000 1111" -> "1111 0000"
 
 
-## Bit shifts
+## Arithmetic shift
+- Arithemtic shift: bits shifted off the end are gone. 
+- Left arithmetic shift: 0's are subbed in on the right end (to replace the # of bits shifted off the left).  Ex] "00010111" << 2 (left shift by two) -> "01011100". A left arithmetic shift by n is equivalent to multiplying by 2^n [2].
+- Right arithmetic shift: the previous leftmost digit (AKA the 'sign bit', which determines the sign of the number, positive or negative) is shifted in on the left as the right bits "fall off". This preserves the sign of the number.  Ex] "10010111" >> 1 (right shift by one) -> "11001011"
+
+
+## Logical shift
+- Zeros are subbed in on either end (so left shift is the same for both). Great for unsigned numbers. 
+
 
 
 
@@ -27,12 +37,14 @@ Address space is broken up into bytes (usually 8 bits). So if you want to store 
 
 
 ## More practice 
-- https://leetcode.com/problems/single-number/
+- https://leetcode.com/problems/bitwise-xor-of-all-pairings/description/
+- https://www.youtube.com/watch?v=NLKQEOgBAnw
 
 
 
 Sources:
 1. https://www.alexhyett.com/bitwise-operators/
+2. https://en.wikipedia.org/wiki/Bitwise_operation
 
 
 
