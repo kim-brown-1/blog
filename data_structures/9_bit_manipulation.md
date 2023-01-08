@@ -37,7 +37,8 @@ Note - the shorthand for logical operators (|, &, >>, <<) are based on C/ Python
 
 
 ## More practice 
-- https://leetcode.com/problems/bitwise-xor-of-all-pairings/description/
+- (Easy) https://leetcode.com/problems/number-of-1-bits/
+- (Medium) https://leetcode.com/problems/bitwise-xor-of-all-pairings/description/
 - https://www.youtube.com/watch?v=NLKQEOgBAnw
 
 
