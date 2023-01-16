@@ -1,36 +1,25 @@
 # Primitives
 
-Coming soon.
-
 Note: this section is heavily based on C. 
 
-How are they represented in memory? 
 
 ## Bits and Bytes ##
-How the heck does a computer store a bit anyway? 
-This isn't a physics blog, so we'll only shortly touch base on this. A bit can be either 1 or 0, "on" or "off". It might be a "tiny dent on a CD or DVD" [2] or a magnetic region. 
+Bits are the most fundamental element of computer science - like atoms in the life sciences. A bit can be either 1 or 0, "on" or "off". How on Earth does a computer store a bit? This isn't a physics blog, but the simplest explanation is that it's often a tiny dent or magnetic region on disk or other types of hardware.
 
-8 bits together are one byte, and 4 bytes are a word (usually). Frequently, a character (char) takes up one byte, and any number takes up one word (4 bytes x 8 bits = 32 bits). 
-
-TODO: hex/ octal, binary
+8 bits together form one "byte", and usually 4 bytes make up one "word". Generally, a character takes up one byte, and any number takes up one word (4 bytes x 8 bits = 32 bits in one word). 
 
 
 ## Char ##
-
-In C, each char takes up one byte and is stored as an integer from -128 to 127 or 0 to 255 (?). Each integer is mapped to a character using a specified maapping, for example ASCII ("American Standard Code for Information Interchange") [1]. 
+In C, each char takes up one byte and is stored as an integer from -128 to 127 or 0 to 255. Each integer is mapped to a character using a specified maapping, for example ASCII ("American Standard Code for Information Interchange") [1]. 
 
 ## Numbers ## 
+Now let's think about storing one unsigned (non-negative) integer. We use one word (32 bits) to store the integer, so the largest value we can have is 2^32 - 1. Why? There are two possible values (0 and 1), and 32 slots to store those in. 
 
-TODO: signed/ unsigned int, float, etc.
-
-An unsigned int is pretty simple. We use one word (32 bits) to store the integer, so the largest value we can have is 2^32 - 1. 
-
-We only have to make a slight adjustment to support negative numbers: use the leftmost bit to represent the sign of a number. This makes the range -2^31 - 1 to +2^31 - 1. 2^31 is approximately 2.1 billion. 
+We only have to make a slight adjustment to support signed integers (negative or positive): use the leftmost bit to represent the sign. This broadens our range enormously - we can now store anything from -2^31 - 1 to +2^31 - 1! (2^31 is approximately 2.1 billion). 
 
 Now let's make things a bit more complicated. How do we support real numbers, like floats? 
 
-A floating-point number in memory has three separate parts: the sign bit, exponent (e), and "mantissa" (m). It represents the number m x 2^e.  
-
+A floating-point number in memory has three separate parts: the sign bit, exponent (e), and "mantissa" (m). It represents the number m x 2^e.  [TODO]
 
 
 
