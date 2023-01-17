@@ -1,6 +1,6 @@
 # Hash tables
 
-Most simply, a hash table maps keys to values. 
+A hash table maps keys to values. 
 
 They can be implemented in different ways, but one common implementation uses an array of linked lists and a hash function. Here's how the major operations are done.
 
@@ -18,5 +18,10 @@ Practice:
 - https://leetcode.com/problems/design-hashmap/description/
 
 [View simple implementation](code/hash_table.py)
+
+
+
+
+
 
 Next: [Stacks](4_stacks.md)

@@ -5,4 +5,8 @@ Coming soon:
 - Height balancing
 - Implementation
 
-Next: [Bitwise operations](9_bitwise_operations.md)
+
+
+
+
+Next: [Bit manipulation](9_bit_manipulation.md)

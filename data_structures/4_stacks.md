@@ -1,8 +1,5 @@
 # Stacks
 
-Coming soon
-
-
 A stack is last in, first out. Picture a huge stack of plates - you can only add to the top or take plates off one at a time, but can't access plates anywhere else (without them toppling over!).
 
 How are stacks implemented under the hood? As with most data structures, there are multiple approaches. One very simple approach is with an array. 
@@ -18,9 +15,11 @@ If we want a stack with a really large limit, it wouldn't be efficient to alloca
 One benefit of using a linked list over an array is that we can allocate exactly how much space we need, and just keep adding nodes as we go along. 
 
 
-
-
 ## Practice ##
 - https://leetcode.com/problems/design-a-stack-with-increment-operation/
+
+
+
+
 
 Next: [Queues](5_queues.md)

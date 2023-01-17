@@ -1,7 +1,6 @@
 # Bit manipulation
 
 ## Why do it?
-
 As an early CS student, I had no idea why bit operations were worth learning. Why work with data on the bit level, instead of using language abstractions like usual? 
 
 Then at my first internship I had to use a bitmask to represent some boolean flags in a small message, and I started thinking about this stuff a bit more. The short answer is that they can make code faster and more efficient in certain circumstances, especially when memory is limited. Frequently these are low-level programs, like embedded devices or encryption.
@@ -12,7 +11,6 @@ Address space is broken up into bytes (usually 8 bits). So if you want to store 
 
 
 ## Common operators
-
 Note - the shorthand for logical operators (|, &, >>, <<) are based on C/ Python notation. 
 
 - NOT: AKA "bitwise complement", negates each bit. Ex]  ^ "0011 1111" -> "1100 0000"
@@ -31,8 +29,6 @@ Note - the shorthand for logical operators (|, &, >>, <<) are based on C/ Python
 - Zeros are subbed in on either end (so left shift is the same for both). Great for unsigned numbers. 
 
 
-
-
 ## Two's complement
 
 
@@ -41,9 +37,7 @@ Note - the shorthand for logical operators (|, &, >>, <<) are based on C/ Python
 - (Medium) https://leetcode.com/problems/bitwise-xor-of-all-pairings/description/
 - https://www.youtube.com/watch?v=NLKQEOgBAnw
 
-
-
-Sources:
+## Sources:
 1. https://www.alexhyett.com/bitwise-operators/
 2. https://en.wikipedia.org/wiki/Bitwise_operation
 

@@ -8,4 +8,8 @@ Since nodes aren't contiguous in memory, you can't index into them like you can 
 
 Recursive algorithms go hand-in-hand with linked lists, because each list's first element contains a pointer to a smaller linked list (node.next).
 
-[Next: Hash tables](3_hash_tables.md)
+
+
+
+
+Next: [Hash tables](3_hash_tables.md)
